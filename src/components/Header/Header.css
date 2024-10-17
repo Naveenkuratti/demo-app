@@ -1,0 +1,67 @@
+.header {
+    height: 34vw; /* Fixed height */
+    width: 100%; /* Full width */
+    max-width: 97vw; /* Maintain max width */
+    margin: 30px auto;
+    background: url('/panmasala.png') no-repeat center center;
+    background-size: cover; /* Adjust background size */
+    position: relative;
+}
+
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+
+.header-contents h2 {
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw, 22px);
+}
+
+.header-contents p {
+    color: white;
+    font-size: 1rem; /* Corrected font size */
+}
+
+.header-contents button {
+    border: none;
+    color: #747474; /* Corrected property */
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Hover effect */
+}
+
+.header-contents button:hover {
+    background-color: #f0f0f0; /* Light hover effect */
+}
+
+@media (max-width: 1050px) {
+    .header-contents {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 750px) {
+    .header-contents {
+        max-width: 65%;
+    }
+    .header-contents p {
+        display: none; /* Hide description on small screens */
+    }
+    .header-contents button {
+        padding: 2vw 4vw; /* Adjust button padding */
+    }
+}
+

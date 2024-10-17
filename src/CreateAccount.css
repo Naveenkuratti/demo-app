@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Use percentage for width to be more responsive */
+    max-width: 400px; /* Set a max-width for larger screens */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center; /* Center the heading */
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4a4a4a;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 1.5rem; /* Reduce padding for smaller screens */
+    }
+    
+    h1 {
+        font-size: 1.5rem; /* Adjust font size for heading */
+    }
+
+    input, button {
+        font-size: 0.9rem; /* Slightly reduce font size for inputs and buttons */
+    }
+}
+
+@media (min-width: 769px) {
+    .form-container {
+        padding: 2rem; /* Increase padding for larger screens */
+    }
+}

@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+   
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 255, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(243, 239, 239, 0.288);
+    border-radius: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px; /* Maximum width for larger screens */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo img {
+    width: 80%; /* Make logo responsive */
+    max-width: 150px; /* Set a maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px;
+}
+
+.logo h1 {
+    margin: 10px 0 5px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.create-account {
+    width: 100%;
+    padding: 10px;
+    background-color: #186fc6;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    .input-field {
+        padding: 8px;
+    }
+
+    .login-button,
+    .create-account {
+        padding: 8px;
+    }
+}
